@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+It is deployed with github pages and live at [https://andreysaf.github.io/aspire-docusaurus](https://andreysaf.github.io/aspire-docusaurus).
+
 ### Installation
 
 ```
