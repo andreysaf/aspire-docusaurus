@@ -52,7 +52,7 @@ Install `@supabase/auth-ui-react`, `@supabase/auth-ui-shared`, `@supabase/supaba
 npm i @supabase/auth-ui-react @supabase/auth-ui-shared @supabase/supabase-js
 ```
 
-Create a new component `src/components/AuthSupabase`:
+Create a new component `src/components/AuthSupabase/index.js`:
 
 ```javascript
 import { createClient } from '@supabase/supabase-js';
