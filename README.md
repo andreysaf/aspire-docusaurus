@@ -44,6 +44,26 @@ cmd /C 'set "GIT_USER=andreysaf" && yarn deploy'
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
+### Adding AI Chatbot
+
+This guide assumes you are using [docsbot.ai](https://docsbot.ai/). Create a new component under `src/theme/Root.js`:
+
+```javascript
+import React, { useEffect } from 'react';
+
+// Default implementation, that you can customize
+export default function Root({ children }) {
+
+    useEffect(() => {
+        // Paste the embed script here:
+        window.DocsBotAI=.......;
+        DocsBotAI.init({ id: "xxxx" });
+    }, []);
+
+    return <>{children}</>;
+}
+```
+
 ### Adding Authentication
 
 You can protect just certain paths or the whole documentation site. This example uses [Supabase](https://supabase.com/) for authentication purposes. Create a project in [Supabase](https://supabase.com/) to get your project URL and API KEY.
